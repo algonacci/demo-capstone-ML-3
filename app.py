@@ -5,6 +5,7 @@ from flask import Flask, jsonify, request
 from PIL import Image
 from tensorflow.keras.models import load_model
 from werkzeug.utils import secure_filename
+from auth import auth
 
 app = Flask(__name__)
 app.config['ALLOWED_EXTENSIONS'] = set(['png', 'jpg', 'jpeg'])
@@ -44,6 +45,7 @@ def index():
 
 
 @app.route("/prediction", methods=["POST"])
+@auth.login_required()
 def prediction_route():
     if request.method == "POST":
         image = request.files["image"]

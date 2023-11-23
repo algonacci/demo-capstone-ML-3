@@ -6,6 +6,7 @@ certifi==2023.11.17
 charset-normalizer==3.3.2
 click==8.1.7
 Flask==3.0.0
+Flask-HTTPAuth==4.8.0
 flatbuffers==23.5.26
 gast==0.5.4
 google-auth==2.23.4
