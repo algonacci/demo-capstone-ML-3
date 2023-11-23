@@ -1,0 +1,5 @@
+0 Black_Soil
+1 Cinder_Soil
+2 Laterite_Soil
+3 Peat_Soil
+4 Yellow_Soil
